@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VaccineTracker</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    
+    <nav  id="sticky" class="  navbar navbar-expand-lg navbar-dark bg-dark ">
+        <div class="img">
+            <img src="jpeg-removebg-preview.png" alt="logoPic" class="logo">
+        </div>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">VaccineTracker</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    -->
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+<div class="background">
+    
+    <h2 class="white">CHECK AVAILABILITY</h2>
+
+    <form id="form">
+
+        <span>
+        <div>
+            <label for="pincode" class="white" > Enter Your PINCODE: </label>
+
+            <input type="text" name="pincode" id="pincode" required>
+        </div>
+        <div>
+            <label for="email" class="white">Enter Your Email</label>
+
+            <input type="email" name="myemail" id="email" required>
+        </div>
+        <div>
+        <label for="date" class="white">Enter Date</label>
+        <input type="date" name="mydate" id="date" min="1997-01-01" max="2030-12-31" required>
+        
+    </div>
+</span>
+
+         
+         <br>
+      
+       <button type="submit"  class=" mybtn btn btn-light animation" id="check">Check</button>
+       <button type="reset" class="btn btn-light animation">Reset</button>
+       <button onclick="stopCowinNotifier()" class="btn btn-light">Stop Vaccine Notifier</button>
+
+        <!-- <label for="">select car</label>
+          <select name="mycar" id="car">
+           <option value="lambo">lambo</option>
+           <option value="ferari">ferari</option>
+           <option value="bugati">bugati</option>
+   -->
+
+
+        </select>
+    </form>
+
+    <div class="result white" id="result"  >
+
+        Current Time:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p id="currentDateTimeDisplay" class="displyInlineBlock"></p><br>
+        Last Attempt Time:&nbsp;&nbsp;&nbsp;<p id="lastAttemptDateTimeDisplay" class="displyInlineBlock"></p>
+        <br>
+        <div id="apiResponseData"></div>
+        
+    </div>
+
+</div>
+   
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+
+    <script src="back.js"></script>
+
+
+</html>

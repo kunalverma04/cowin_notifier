@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+span{
+
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    border: 2px solid grey;
+    border-radius: 23px;
+    
+    height: 8rem;
+}
+label{
+    margin: 23px;
+    
+}
+.mybtn{
+    margin: 23px;
+}
+
+h2{
+
+    padding: 17px;
+}
+
+.result{
+
+    height: 380px;
+    width: 100%;
+    /* border:2px solid rgb(0, 0, 0); */
+    /* background-color: rgb(231, 226, 224); */
+}
+
+
+.displyInlineBlock{
+    display: inline-block;
+}
+
+
+/* 
+.img{
+    border: 2px solid red;
+    height: 23px;
+    width: 23px;
+} */
+.logo{
+    left: 136px;
+    top: 5px;
+    height: 49px;
+    width: 47px;
+    margin: 0px;
+    padding: -10px;
+    position: absolute;
+}
+
+.background{
+
+    background: rgba(0,0,0 ,0.7)url(syringe-1884758_1920.jpg);
+    background-size:cover;
+   
+    background-blend-mode: soft-light;
+    height: 100vh;
+}
+#sticky{
+    position: sticky;
+    
+}
+.white{
+    color: white;
+}
+input{
+    border-radius: 8px;
+
+}
+@keyframes glowing {
+    0% {
+      background-color: #2ba805;
+      box-shadow: 0 0 5px #2ba805;
+    }
+    50% {
+      background-color: #49e819;
+      box-shadow: 0 0 20px #49e819;
+    }
+    100% {
+      background-color: #2ba805;
+      box-shadow: 0 0 5px #2ba805;
+    }
+  }
+  .animation {
+    animation: glowing 1300ms infinite;
+  }
