@@ -1,8 +1,20 @@
+/* CSS RESET */
 *{
     margin: 0;
     padding: 0;
 }
+/* NAVBAR */
 
+.logo{
+    left: 136px;
+    top: 5px;
+    height: 49px;
+    width: 47px;
+    margin: 0px;
+    padding: -10px;
+    position: absolute;
+}
+/* INPUT SECTION */
 span{
 
     display: flex;
@@ -25,45 +37,56 @@ h2{
 
     padding: 17px;
 }
-
-.result{
-
-    height: 380px;
-    width: 100%;
-    /* border:2px solid rgb(0, 0, 0); */
-    /* background-color: rgb(231, 226, 224); */
+.l2{
+    width: 9rem;
+}
+.l3{
+  width: 9rem;
 }
 
+/* OUTPUT SECTION */
 
+.Tinput{
+    width: 11.25rem;
+}
+.time{
+    margin: 23px;
+    width: 8rem;
+}
+.time2{
+    margin: 23px;
+   
+}
+
+#apiResponseData{
+    margin: 23px;
+}
+.result{
+    border: 2px solid white;
+    height: 156vh;
+    border-radius: 23px;
+}
+/* GENERAL */
 .displyInlineBlock{
     display: inline-block;
 }
 
 
-/* 
-.img{
-    border: 2px solid red;
-    height: 23px;
-    width: 23px;
-} */
-.logo{
-    left: 136px;
-    top: 5px;
-    height: 49px;
-    width: 47px;
-    margin: 0px;
-    padding: -10px;
-    position: absolute;
-}
+
 
 .background{
 
-    background: rgba(0,0,0 ,0.7)url(syringe-1884758_1920.jpg);
-    background-size:cover;
-   
-    background-blend-mode: soft-light;
-    height: 100vh;
+    
+    background-color:#9b9494;
+    height: 200vh;
+
 }
+/* .btnThird{
+  position: absolute;
+  left: 13rem;
+  top: 19.4rem;
+} */
+
 #sticky{
     position: sticky;
     
@@ -73,22 +96,77 @@ h2{
 }
 input{
     border-radius: 8px;
+    
 
 }
-@keyframes glowing {
-    0% {
-      background-color: #2ba805;
-      box-shadow: 0 0 5px #2ba805;
+#inputData{
+    margin: 23px;
+}
+
+
+  /* 
+  RESPONSIVE */
+  @media only screen and (max-width: 1078px) {
+
+    span{
+
+        flex-direction: column;
+        align-items:flex-start;
+        justify-content:start;
+        height:40vh;
     }
-    50% {
-      background-color: #49e819;
-      box-shadow: 0 0 20px #49e819;
+    .btnThird{
+        
+        top: 33.3rem;
+      }
+
+      .background{
+
+       
+        height: 230vh;
+    
     }
-    100% {
-      background-color: #2ba805;
-      box-shadow: 0 0 5px #2ba805;
-    }
+
+
+
+
   }
-  .animation {
-    animation: glowing 1300ms infinite;
+
+  @media only screen and (max-width: 696px) {
+
+    .btnThird{
+        
+        top: 33.1rem;
+      }
+
+  
+  }
+  @media only screen and (max-width: 568px) {
+
+     .background{
+         height: 500vh;
+     }
+  }
+  @media only screen and (max-width: 371px) {
+
+     .background{
+         height: 500vh;
+     }
+
+     span{
+         height: 60vh;
+
+    }
+    .l2{
+        width: 6rem;
+    }
+    .l1{
+        width: 6rem;
+    }
+    .l3{
+      width: 6rem;
+    }
+    .Tinput{
+        width: 9rem;
+    }
   }

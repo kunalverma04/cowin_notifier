@@ -14,10 +14,11 @@
 </head>
 
 <body>
-    
-    <nav  id="sticky" class="  navbar navbar-expand-lg navbar-dark bg-dark ">
+
+    <!-- NAVBAR -->
+    <nav id="sticky" class="  navbar navbar-expand-lg navbar-dark bg-dark ">
         <div class="img">
-            <img src="jpeg-removebg-preview.png" alt="logoPic" class="logo">
+            <img src="img/logo.png" alt="logoPic" class="logo">
         </div>
         <div class="container-fluid">
             <a class="navbar-brand" href="#">VaccineTracker</a>
@@ -28,75 +29,64 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <!-- <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    -->
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
             </div>
         </div>
     </nav>
 
-<div class="background">
-    
-    <h2 class="white">CHECK AVAILABILITY</h2>
 
-    <form id="form">
+    <!-- INPUT SECTION -->
+    <div class="background">
 
-        <span>
-        <div>
-            <label for="pincode" class="white" > Enter Your PINCODE: </label>
+        <h2 class="white">CHECK AVAILABILITY</h2>
 
-            <input type="text" name="pincode" id="pincode" required>
-        </div>
-        <div>
-            <label for="email" class="white">Enter Your Email</label>
+        <form id="form">
 
-            <input type="email" name="myemail" id="email" required>
-        </div>
-        <div>
-        <label for="date" class="white">Enter Date</label>
-        <input type="date" name="mydate" id="date" min="1997-01-01" max="2030-12-31" required>
-        
-    </div>
-</span>
+            <span>
+                <div>
+                    <label for="pincode" class="white l1"> Enter Your PINCODE: </label>
 
-         
-         <br>
-      
-       <button type="submit"  class=" mybtn btn btn-light animation" id="check">Check</button>
-       <button type="reset" class="btn btn-light animation">Reset</button>
-       <button onclick="stopCowinNotifier()" class="btn btn-light">Stop Vaccine Notifier</button>
+                    <input class="Tinput" type="text" name="pincode" id="pincode" required>
+                </div>
+                <div>
+                    <label for="email" class="white l2">Enter Your Email</label>
 
-        <!-- <label for="">select car</label>
-          <select name="mycar" id="car">
-           <option value="lambo">lambo</option>
-           <option value="ferari">ferari</option>
-           <option value="bugati">bugati</option>
-   -->
+                    <input class="Tinput" type="email" name="myemail " id="email" required>
+                </div>
+                <div>
+                    <label for="date" class="white l3">Enter Date</label>
+                    <input class="Tinput" type="date" name="mydate" id="date" min="1997-01-01" max="2030-12-31"
+                        required>
+
+                </div>
+            </span>
 
 
-        </select>
-    </form>
+            <br>
 
-    <div class="result white" id="result"  >
+            <button type="submit" class=" mybtn btn btn-light" id="check">Check</button>
+            <button type="reset" onclick="stopCowinNotifier()" class="btn btn-light ">Reset</button>
 
-        Current Time:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p id="currentDateTimeDisplay" class="displyInlineBlock"></p><br>
-        Last Attempt Time:&nbsp;&nbsp;&nbsp;<p id="lastAttemptDateTimeDisplay" class="displyInlineBlock"></p>
+            </select>
+        </form>
+        <!-- <button onclick="stopCowinNotifier()" class="btnThird btn btn-light">Stop Vaccine Notifier</button>
+        <div class="result white " id="result"> -->
+
+
+
+        <!-- OUTPUT SECTION    -->
+        <p class="time displyInlineBlock">Current Time:</p>
+        <p id="currentDateTimeDisplay" class="displyInlineBlock"></p><br>
+        <p class="time2 displyInlineBlock">Last Attempt Time:</p>
+        <p id="lastAttemptDateTimeDisplay" class="displyInlineBlock">NA</p>
         <br>
+        <div id="inputData"></div>
         <div id="apiResponseData"></div>
-        
+
     </div>
 
-</div>
-   
+    </div>
+
 </body>
 
 
@@ -104,7 +94,7 @@
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
     crossorigin="anonymous"></script>
 
-    <script src="back.js"></script>
+<script src="back.js"></script>
 
 
 </html>
